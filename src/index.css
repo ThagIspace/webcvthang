@@ -1,0 +1,131 @@
+/* index.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.container-fluid {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  margin: 50px;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin-top: 10px;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  transition: background-color 0.5s;
+}
+
+.dark-mode {
+  background-color: #333;
+}
+
+.dark-mode .container-fluid .left_Side {
+  background: #002233;
+}
+
+.dark-mode .container-fluid .right_Side {
+  background: rgb(21, 25, 27);
+}
+
+.dark-mode .profileText h2 {
+  color: orange;
+}
+
+.dark-mode .contactInfo ul li .icon {
+  color: #ffcc00;
+}
+
+.dark-mode .contactInfo ul li span {
+  color: #ffcc00;
+}
+
+.dark-mode .contactInfo.education h5 {
+  color: #ffcc00;
+}
+
+.dark-mode .contactInfo.education h4:nth-child(2) {
+  color: #ffcc00;
+}
+
+.dark-mode .contactInfo.education h4 {
+  color: #ebbf10;
+}
+
+.dark-mode .contactInfo.language .percent div {
+  background: #ffcc00;
+}
+
+.dark-mode .about .box .year_company h5 {
+  color: #0066ff;
+}
+/* thợ hề */
+.dark-mode .about .box .text h4 { 
+  color: #ff0000;
+}
+
+.dark-mode .skills .box h4 {
+  color: #0062ff;
+}
+
+.dark-mode .skills .box .percent div {
+  background: #03a9f4;
+}
+
+.dark-mode .interest ul li {
+  color: #f2f2f2;
+}
+
+.dark-mode .title2 {
+  color: #ff6600;
+}
+
+.dark-mode .about p {
+  color: whitesmoke;
+}
+
+@media (max-width: 768px) {
+  .container-fluid {
+    flex-direction: column;
+    margin: 15px;
+  }
+
+  .left_Side,
+  .right_Side {
+    padding: 15px;
+  }
+
+  .profileText h2 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+
+  .profileText .imgBx {
+    width: 150px;
+    height: 150px;
+  }
+
+  .title2 {
+    font-size: 1.5em;
+  }
+
+  .contactInfo ul li .icon {
+    font-size: 16px;
+  }
+}

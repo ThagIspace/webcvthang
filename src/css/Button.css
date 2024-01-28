@@ -1,0 +1,20 @@
+/* Button.css */
+.toggle-button {
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #5b3d09;
+}
+
+.dark-mode .toggle-button {
+    background-color: #ffa406;
+    color: #fff;
+}
