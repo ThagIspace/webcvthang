@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import Leftside from './components/Leftside';
 import Rightside from './components/Rightside';
 import Button from './components/Button';
-import './App.css'; // Import your main styling file
+import './App.css';
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
